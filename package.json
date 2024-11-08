@@ -1,7 +1,7 @@
 {
 	"name": "@qsocket/transport-engine.io-client-v3",
 	"description": "A wrapper for engine.io-client v3, designed for @qsocket/core, enabling client-side connections with legacy Engine.IO in qsocket applications.",
-	"version": "0.0.1-beta",
+	"version": "0.0.1-rc",
 	"keywords": [
 		"qsocket",
 		"qsocket/core",
