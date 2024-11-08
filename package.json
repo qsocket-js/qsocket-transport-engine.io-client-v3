@@ -1,7 +1,7 @@
 {
 	"name": "@qsocket/transport-engine.io-client-v3",
 	"description": "A wrapper for engine.io-client v3, designed for @qsocket/core, enabling client-side connections with legacy Engine.IO in qsocket applications.",
-	"version": "0.0.1-alpha",
+	"version": "0.0.1-beta",
 	"keywords": [
 		"qsocket",
 		"qsocket/core",
@@ -33,11 +33,9 @@
 		"dev": "tsup ./src/index.ts --watch --onSuccess \"node ./dist/index.js\"",
 		"start": "node ./dist/index.js",
 		"build": "tsup",
-		"build:types": "dts-bundle-generator -o dist/index.d.ts src/index.ts",
 		"lint": "eslint \"**/*.{ts,tsx}\"",
 		"lint:fix": "eslint \"**/*.{ts,tsx}\" --fix --color",
-		"format": "prettier --write src/",
-		"publish": "npm publish --access public"
+		"format": "prettier --write src/"
 	},
 	"repository": {
 		"type": "git",
@@ -54,12 +52,12 @@
 		}
 	],
 	"dependencies": {
-		"@types/engine.io-client": "3.1.8",
-		"engine.io-client": "3.5.4"
+		"@types/engine.io-client-v3": "npm:@types/engine.io-client@3.1.8",
+		"engine.io-client-v3": "npm:engine.io-client@3.5.4"
 	},
 	"peerDependencies": {
-		"@types/engine.io-client": "3.1.8",
-		"engine.io-client": "3.5.4"
+		"@types/engine.io-client-v3": "npm:@types/engine.io-client@3.1.8",
+		"engine.io-client-v3": "npm:engine.io-client@3.5.4"
 	},
 	"devDependencies": {
 		"@types/eslint-config-prettier": "^6.11.3",
